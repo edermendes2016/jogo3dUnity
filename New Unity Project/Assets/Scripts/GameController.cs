@@ -23,10 +23,10 @@ public class GameController : MonoBehaviour
     int metalColetado;
     int vidroColetado;
 
-    Text plasticoColet;
-    Text papelColet;
-    Text metalColet;
-    Text vidroColet;
+    public Text plasticoColet;
+    public Text papelColet;
+    public Text metalColet;
+    public Text vidroColet;
 
     public Text plastico2;
     public Text papel2;
@@ -114,6 +114,7 @@ public class GameController : MonoBehaviour
         papel2.text = "0/3";
         vidro2.text = "0/2";
         metal2.text = "0/???";
+        
     }
 
     public void ColetarPlastico()
@@ -236,6 +237,7 @@ public class GameController : MonoBehaviour
         voltarAoMenu.gameObject.SetActive(false);
         Pause.enabled = false;
         Time.timeScale = 1;
+        
     }
     // Update is called once per frame
     void Update()
@@ -244,5 +246,6 @@ public class GameController : MonoBehaviour
         GanharJogo();
         sliderVida.value = vidaJogador;
         PauseDoJogo();
+        
     }
 }
