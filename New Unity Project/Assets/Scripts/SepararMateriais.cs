@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -71,8 +70,7 @@ public class SepararMateriais : MonoBehaviour
                 if (mat == Material.plastico && gc.GetComponent<GameController>().plastico > 0)
                 {
                     gc.GetComponent<GameController>().SepararPlastico();
-                    gc.GetComponent<GameController>().ZerarPlastico();
-                    Debug.Log("plastico");
+                    gc.GetComponent<GameController>().ZerarPlastico();                    
                     StartCoroutine(AvisoMaterial());
                 }
                 if (mat == Material.papel && gc.GetComponent<GameController>().papel > 0)
@@ -97,8 +95,5 @@ public class SepararMateriais : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-
-    }
+    
 }

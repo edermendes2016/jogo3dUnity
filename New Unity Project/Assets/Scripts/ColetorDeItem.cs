@@ -44,13 +44,13 @@ public class ColetorDeItem : MonoBehaviour
                 {
                     gc.GetComponent<GameController>().ColetarVidro();
                     jaColetou = true;
-                    Destroy(this.gameObject, 1.3f);
+                    Destroy(this.gameObject, 1.0f);
                 }
                 if (mat == Material.metal && !jaColetou)
                 {
                     gc.GetComponent<GameController>().ColetarMetal();
                     jaColetou = true;
-                    Destroy(this.gameObject, 1.2f);
+                    Destroy(this.gameObject, 1.0f);
                 }
             }
         }
